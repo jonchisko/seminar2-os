@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+
+
+</head><body>
+
+ 
+
+<div id="397458688" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Association Rules <span class="timestamp">Sat Jan 06 18, 15:17:34</span></h1><div class="content">
+<ul><b>Number of rules:</b> 6<br><b>Selected rules:</b> 0<br><b>Covered examples:</b> 0<br></ul><h2>Rules</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Supp</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Conf</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Covr</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Strg</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Lift</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Levr</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Antecedent</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;"></th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Consequent</th></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.522</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.879</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.593</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.945</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.567</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.189</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">4993=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">5952=1.0</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.522</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.930</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.561</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.058</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.567</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.189</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">5952=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">4993=1.0</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.513</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.923</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.556</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.067</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.556</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.183</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">7153=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">4993=1.0</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.513</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.865</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.593</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.937</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.556</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.183</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">4993=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">7153=1.0</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.502</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.903</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.556</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.009</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.610</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.190</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">7153=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">5952=1.0</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.502</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.895</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.561</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.992</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.610</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.190</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">5952=1.0</td><td style="color:black;border:0;background:transparent;text-align:center;vertical-align:middle;">→</td><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">7153=1.0</td></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);">Pravila movies</textarea></div></div></body></html>
